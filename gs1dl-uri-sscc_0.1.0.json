@@ -1,0 +1,17 @@
+{
+    "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/gs1dl-uri-sscc_0.1.0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Ensures that epcList, childEPCs or parentID are populated with one or more SSCC GS1 Digital Link Web URIs",
+    "title": "SSCC GS1 Digital Link URIs",
+    "definitions": {
+        "gs1dl-uri-sscc": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "pattern": "^(https?):(\/\/((([^\/?#]*)@)?([^\/?#:]*)(:([^\/?#]*))?))?([^?#]*)(\/00\/)\\d{18}$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        }
+    }
+}

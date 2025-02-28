@@ -7,15 +7,14 @@ Concatenated string consisting of:
 {JSON schema component name} + ´_´ + {Major version} + ´.´ + {Minor version} + ´.´ + {Patch version} + '.json'
 
 ### `JSON schema component name`
-* alphanumeric string, consisting of up to 30 letters
-* starting with a lowercase
-* expressed in camelcase in case it consists of several words
+* alphanumeric string consisting of lowercase letters
+* separated by a hyphen/dash character ('-') if consisting of several words (kekab case)
 
-### Examples  
-* "quantityUOM_1.0.0.json"
-* "quantityUOMLength_1.0.0.json"
-* "epcURNs_0.1.0.json"
-* "exampleExtensionValues_1.0.1.json"
+### Examples (for illustration purposes only)
+* "quantity-uom-all_1.0.0.json"
+* "quantity-uom-length_1.0.0.json"
+* "epc-uri-sgtin_0.1.0.json"
+* "example-extension-field-string-value_1.0.1.json"
 
 Files MUST NOT be removed. 
 
@@ -54,8 +53,8 @@ Concatenated string consisting of:
 ### `Profile counter`
 * integer
 
-### Examples (fictitious)
-* “GS1_AS_FIT_1dot1_ApplyingUnitLevelUIs_1” (GS1, Application Standard, Fighting Illicit Trade with EPCIS Application Standard, Release 1.1, Application of unit level UIs on unit packets, Profile #1)
-* “GS1DE_GP_EUDR_1dot0_OriginDeclarationEvent_2” (GS1 Germany, Green Paper, Green Paper: How GS1 Standards can help to meet the EU Deforestation Regulation, Release 1.0, Origin Declaration Event, Profile #2)
+### Examples (for illustration purposes only)
+* “GS1_AS_FIT_1dot1_ApplyingUnitLevelUIs_1.json” (GS1, Application Standard, Fighting Illicit Trade with EPCIS Application Standard, Release 1.1, Application of unit level UIs on unit packets, Profile #1)
+* “GS1DE_GP_EUDR_1dot0_OriginDeclarationEvent_2.json” (GS1 Germany, Green Paper, Green Paper: How GS1 Standards can help to meet the EU Deforestation Regulation, Release 1.0, Origin Declaration Event, Profile #2)
 
 Files MAY be removed. 
