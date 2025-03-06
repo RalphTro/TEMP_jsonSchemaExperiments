@@ -1,7 +1,7 @@
 # TEMP_jsonSchemaExperiments
 Just for testing the import of JSON schema components residing in a public GitHub repo 
 
-## Naming conventions for JSON Schema Snippets (TBD)
+## Naming conventions for JSON Schema Building Blocks (TBD)
 
 Concatenated string consisting of: 
 {JSON schema component name} + ´_´ + {Major version} + ´.´ + {Minor version} + ´.´ + {Patch version} + '.json'
