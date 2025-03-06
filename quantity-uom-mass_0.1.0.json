@@ -1,7 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-mass_0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid mass unit according to UN/CEFACT Rec. 20.",
+    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid mass unit code according to UN/CEFACT Rec. 20.",
     "title": "Unit codes for mass, based on UN/CEFACT Rec. 20",
     "definitions": {
         "quantity-uom-mass": {

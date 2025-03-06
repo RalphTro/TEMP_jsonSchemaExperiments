@@ -1,7 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-length_0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid length unit according to UN/CEFACT Rec. 20.",
+    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid length unit code according to UN/CEFACT Rec. 20.",
     "title": "Unit codes for length, based on UN/CEFACT Rec. 20",
     "definitions": {
         "quantity-uom-length": {
