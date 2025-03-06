@@ -1,39 +1,22 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-all_0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "ushdh",
-    "title": "...",
+    "description": "Aggregated schema for area, length, mass and volume units. Ensures that the uom field as part of a QuantityElement is populated with a valid unit code according to UN/CEFACT Rec. 20.",
+    "title": "Unit codes for area, length, mass and volume, based on UN/CEFACT Rec. 20",
     "definitions": {
-        "quantity-uom_all": {
-            "type": "string",
-            "enum": [
-                "KGM", "KTN", "LTN", "2U", "TNE", "STN", "DTN", "STI", "LBR", "HGM", "ONZ", "DJ", "APZ", "GRM", "DG", "CGM", "MGM", "MC", "F13", "CWI", "CWA", "M86", "58", "DRA", "DRI", "E4", "GRN", "PN", "DWT"
-            ],
-            "description": "ushdh .. with some conventions to convey tags",
-            "title": "..."
-        },
-        "quantity-uom-volume": {
-            "type": "string",
-            "enum": [
-                "MTQ", "MAL", "LTR", "MMQ", "CMQ", "DMQ", "HLT", "DMA", "H19", "H20", "DLT", "CLT", "MLT", "4G", "Q34", "Q33", "Q32", "K6", "D40", "A44", "INQ", "FTQ", "YDQ", "GLI", "GLL", "PT", "PTI", "QTI", "PTL", "QTL", "PTD", "OZI", "QT", "J57", "L43", "L61", "L62", "L84", "L86", "OZA", "BUI", "BUA", "BLL", "BLD", "GLD", "QTD", "G26", "G21", "G24", "G25", "G23", "M67", "M68", "M69", "M70", "BFT", "BP", "5I", "GIA", "GII", "NM3", "R9", "SM3", "T6", "WCD", "WSD"
-            ]
-        },
-        "quantityUOM_length": {
-            "type": "string",
-            "enum": [
-                "MTR", "A11", "A71", "C45", "4H", "A12", "DMT", "CMT", "MMT", "INH", "FOT", "YRD", "NMI", "A45", "HMT", "KMT", "B57", "AK", "M50", "M49", "X1", "M51", "HL", "LF", "LK", "LM", "SMI"
-            ]
-        },
-        "quantityUOM_area": {
-            "type": "string",
-            "enum": [
-                "MTK", "KMK", "H30", "DAA", "CMK", "DMK", "H16", "H18", "MMK", "ARE", "HAR", "INK", "FTK", "YDK", "MIK", "M48", "ACR", "M47", "BB"
-            ]
-        },
-        "quantityUOM_mass_metric": {
-            "type": "string",
-            "enum": [
-                "KGM", "..:"
+        "quantity-uom-all": {
+            "oneOf": [{
+                    "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-area_0.1.0.json#/definitions/quantity-uom-area"
+                },
+                {
+                    "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-length_0.1.0.json#/definitions/quantity-uom-length"
+                },
+                {
+                    "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-mass_0.1.0.json#/definitions/quantity-uom-mass"
+                },
+                {
+                    "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-volume_0.1.0.json#/definitions/quantity-uom-volume"
+                }
             ]
         }
     }
