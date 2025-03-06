@@ -1,7 +1,7 @@
 # TEMP_jsonSchemaExperiments
 Just for testing the import of JSON schema components residing in a public GitHub repo 
 
-## Naming conventions for JSON Schema Snippets (TBD)
+## Naming conventions for JSON Schema Building Blocks (TBD)
 
 Concatenated string consisting of: 
 {JSON schema component name} + ´_´ + {Major version} + ´.´ + {Minor version} + ´.´ + {Patch version} + '.json'
@@ -18,7 +18,7 @@ Concatenated string consisting of:
 
 Files MUST NOT be removed. 
 
-## Naming conventions for EPCIS Profiles (TBD)
+## Naming conventions for EPCIS Event Profiles (TBD)
 
 Concatenated string consisting of: 
 {issuer} + ´_´ + {document type} + ´_´ + {document acronym} + ´_´ + {document release} + ´_´ + {profile name} + ´_´ + {profile counter} + '.json'
