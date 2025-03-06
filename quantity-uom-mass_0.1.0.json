@@ -4,7 +4,7 @@
     "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid mass unit according to UN/CEFACT Rec. 20.",
     "title": "Unit codes for mass, based on UN/CEFACT Rec. 20",
     "definitions": {
-        "quantity-uom_mass": {
+        "quantity-uom-mass": {
             "type": "string",
             "enum": [
                 "KGM", "KTN", "LTN", "2U", "TNE", "STN", "DTN", "STI", "LBR", "HGM", "ONZ", "DJ", "APZ", "GRM", "DG", "CGM", "MGM", "MC", "F13", "CWI", "CWA", "M86", "58", "DRA", "DRI", "E4", "GRN", "PN", "DWT"
