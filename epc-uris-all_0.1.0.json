@@ -4,11 +4,13 @@
     "title": "EPC URIs",
     "description": "Set of patterns to validate that epcList, childEPCs, inputEPCList, outputEPCList or parentID are populated with EPC URIs. Contains SGTIN, SSCC, ... (TO BE COMPLETED) EPC URIs.",
     "definitions": {
-        "epc-uri-sscc": {
-            "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sscc_0.1.0.json#/definitions/epc-uri-sscc"
-        },
-        "epc-uri-sgtin": {
-            "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sgtin_0.1.0.json#/definitions/epc-uri-sgtin"
+        "epc-uri-all": {
+            "oneOf": [{
+                    "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sscc_0.1.0.json#/definitions/epc-uri-sscc"
+                },
+                {
+                    "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sgtin_0.1.0.json#/definitions/epc-uri-sgtin"
+                }
+            ]
         }
     }
-}
