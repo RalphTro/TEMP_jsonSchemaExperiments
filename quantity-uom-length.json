@@ -1,0 +1,14 @@
+{
+    "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-length.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid length unit according to UN/CEFACT Rec. 20.",
+    "title": "Unit codes for length, based on UN/CEFACT Rec. 20",
+    "definitions": {
+        "quantityUOM_length": {
+            "type": "string",
+            "enum": [
+                "MTR", "A11", "A71", "C45", "4H", "A12", "DMT", "CMT", "MMT", "INH", "FOT", "YRD", "NMI", "A45", "HMT", "KMT", "B57", "AK", "M50", "M49", "X1", "M51", "HL", "LF", "LK", "LM", "SMI"
+            ]
+        }
+    }
+}
