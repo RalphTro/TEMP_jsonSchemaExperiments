@@ -18,7 +18,7 @@ Concatenated string consisting of:
 
 Files MUST NOT be removed. 
 
-## Naming conventions for EPCIS Profiles (TBD)
+## Naming conventions for EPCIS Event Profiles (TBD)
 
 Concatenated string consisting of: 
 {issuer} + ´_´ + {document type} + ´_´ + {document acronym} + ´_´ + {document release} + ´_´ + {profile name} + ´_´ + {profile counter} + '.json'
