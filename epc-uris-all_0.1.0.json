@@ -2,7 +2,7 @@
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uris_0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "EPC URIs",
-    "description": "Aggregated schema for EPC URIs. Contains SGTIN, SSCC, ... EPC URIs",
+    "description": "Ensures that epcList, childEPCs, inputEPCList, outputEPCList or parentID are populated with one or more EPC URIs. Contains SGTIN, SSCC, ... (TO BE COMPLETED) EPC URIs.",
     "definitions": {
         "epc-uri-sscc": {
             "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sscc_0.1.0.json#/definitions/epc-uri-sscc"
