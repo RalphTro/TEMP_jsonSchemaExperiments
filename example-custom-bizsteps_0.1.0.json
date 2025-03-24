@@ -1,0 +1,16 @@
+{
+    "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/example-custom-bizsteps_0.1.0.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Three example user-defined bizstep values, as used in the epcis:bizstep field.",
+    "title": "Example custom bizstep code values",
+    "definitions": {
+        "example-custom-bizsteps": {
+            "type": "string",
+            "enum": [
+                "https://epcis.example.com/bizstep/washing",
+                "https://epcis.example.com/bizstep/cutting",
+                "https://epcis.example.com/bizstep/blow_drying"
+            ]
+        }
+    }
+}
