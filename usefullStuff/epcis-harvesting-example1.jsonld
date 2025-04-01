@@ -1,0 +1,79 @@
+{
+    "@context": [
+        "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+        {
+            "gs1:harvestDateStart": {
+                "@type": "xsd:date"
+            },
+            "gs1:harvestDateEnd": {
+                "@type": "xsd:date"
+            },
+            "gs1:harvestDate": {
+                "@type": "xsd:date"
+            }
+        }
+    ],
+    "type": "EPCISDocument",
+    "schemaVersion": "2.0",
+    "creationDate": "2024-11-22T11:30:00+01:00",
+    "epcisBody": {
+        "rdfs:comment": [
+            {
+                "@value": "This example illustrates how GS1 Web Vocabulary data structures can be embedded within an EPCIS event. Note: ideally, master data should be shared/transmitted outside EPCIS events, unless there are compelling reasons to do otherwise.",
+                "@language": "en"
+            },
+            {
+                "@value": "Case 1: A company needs to include lot-related master data (here: harvest date/harvest period) pertaining to the two product batches indicated in the quantityList",
+                "@language": "en"
+            },
+            {
+                "@value": "Case 2: A company needs to provide additional location master data which is not accessible through other means (e.g. via a GS1 Digital Link master data request, here: https://id.gs1.org/414/4262431780029?linkType=gs1:masterData )",
+                "@language": "en"
+            }
+        ],
+        "eventList": [
+            {
+                "type": "ObjectEvent",
+                "eventTime": "2024-11-22T11:30:00+01:00",
+                "eventTimeZoneOffset": "+01:00",
+                "action": "ADD",
+                "quantityList": [
+                    {
+                        "epcClass": "https://id.gs1.de/01/04012345999969/10/Batch1",
+                        "quantity": 20
+                    },
+                    {
+                        "epcClass": "https://id.example.com/01/04012345123456/10/LOT1",
+                        "quantity": 25
+                    }
+                ],
+                "bizStep": "commissioning",
+                "disposition": "active",
+                "readPoint": {
+                    "id": "https://id.gs1.org/414/4262431780029"
+                },
+                "gs1:masterDataAvailableFor": [
+                    {
+                        "@id": "https://id.gs1.de/01/04012345999969/10/Batch1",
+                        "gs1:harvestDateStart": "2024-11-20",
+                        "gs1:harvestDateEnd": "2024-11-22"
+                    },
+                    {
+                        "@id": "https://id.example.com/01/04012345123456/10/LOT1",
+                        "gs1:harvestDate": "2024-11-21"
+                    },
+                    {
+                        "@id": "https://id.gs1.org/414/4262431780029",
+                        "gs1:additionalLocationID": {
+                            "gs1:locationID": "AB XYZ",
+                            "gs1:locationID_Type": "gs1:LocationID_Type-UN_LOCODE"
+                        },
+                        "gs1:relatedOrganization": {
+                            "@id": "https://id.example.com/417/4262431780005"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

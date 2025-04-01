@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+        "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/epcis-context-file.jsonld",
         {
             "gs1": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/webvoc-context-file-draft.jsonld"
         }
