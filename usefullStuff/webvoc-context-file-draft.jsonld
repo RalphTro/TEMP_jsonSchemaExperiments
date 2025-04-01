@@ -1484,7 +1484,7 @@
         "@type": "@id"
       },
       "harvestDate": {
-        "@id": "gs1:harvestDate",
+        "@id": "gs2:harvestDate",
         "@type": "xsd:date"
       },
       "harvestDateEnd": {
