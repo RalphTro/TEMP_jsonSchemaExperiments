@@ -2,7 +2,7 @@
     "@context": [
         "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
         {
-            "gs1": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/webvoc-context-file-draft.jsonld"
+            "gs2": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/webvoc-context-file-draft.jsonld"
         }
     ],
     "type": "EPCISDocument",
@@ -52,7 +52,7 @@
                     },
                     {
                         "@id": "https://id.example.com/01/04012345123456/10/LOT1",
-                        "gs1:harvestDate": "2024-11-21"
+                        "gs2:harvestDate": "2024-11-21"
                     },
                     {
                         "@id": "https://id.gs1.org/414/4262431780029",

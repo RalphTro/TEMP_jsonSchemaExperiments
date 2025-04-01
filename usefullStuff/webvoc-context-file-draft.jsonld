@@ -19,6 +19,7 @@
       "geonames": "http://www.geonames.org/ontology#",
       "gr": "http://purl.org/goodrelations/v1#",
       "gs1": "https://ref.gs1.org/voc/",
+      "gs2": "https://ref.gs1.org/voc/",
       "log": "http://www.w3.org/2000/10/swap/log#",
       "owl": "http://www.w3.org/2002/07/owl#",
       "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
