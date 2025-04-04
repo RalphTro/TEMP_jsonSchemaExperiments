@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "@protected": true,
+    "@version": 1.1,
+    "id": "@id",
+    "type": "@type",
+    "dc": "http://purl.org/dc/elements/1.1/",
+    "dcterms": "http://purl.org/dc/elements/1.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "harvestDate": {
+      "@id": "gs1:harvestDate",
+      "@type": "xsd:date"
+    },
+    "harvestDateEnd": {
+      "@id": "gs1:harvestDateEnd",
+      "@type": "xsd:date"
+    },
+    "harvestDateStart": {
+      "@id": "gs1:harvestDateStart",
+      "@type": "xsd:date"
+    }
+  }
+}
