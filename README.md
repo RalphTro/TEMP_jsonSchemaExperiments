@@ -5,7 +5,7 @@ Just for testing the import of JSON schema components residing in a public GitHu
 ## Naming conventions for JSON Schema Building Blocks (TBD)
 
 Concatenated string consisting of:
-{JSON schema component name} + ´_´ + {Major version} + ´.´ + {Minor version} + ´.´ + {Patch version} + '.json'
+{JSON schema component name} + ´-´ + {Major version} + ´.´ + {Minor version} + ´.´ + {Patch version} + '.json'
 
 ### `JSON schema component name`
 
@@ -14,10 +14,10 @@ Concatenated string consisting of:
 
 ### JSON Schema Building Block Name Examples (for illustration purposes only)
 
-* "quantity-uom-all_1.0.0.json"
-* "quantity-uom-length_1.0.0.json"
-* "epc-uri-sgtin_0.1.0.json"
-* "example-extension-field-string-value_1.0.1.json"
+* "quantity-uom-all-1.0.0.json"
+* "quantity-uom-length-1.0.0.json"
+* "epc-uri-sgtin-0.1.0.json"
+* "example-extension-field-string-value-1.0.1.json"
 
 Files MUST NOT be removed.
 

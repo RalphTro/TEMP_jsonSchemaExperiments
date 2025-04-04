@@ -13,10 +13,10 @@
             "type": "object",
             "properties": {
               "epcClass": {
-                "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-class-uri-lgtin_0.1.0.json#/definitions/epc-class-uri-lgtin"
+                "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-class-uri-lgtin-0.1.0.json#/definitions/epc-class-uri-lgtin"
               },
               "uom": {
-                "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-mass_0.1.0.json#/definitions/quantity-uom-mass"
+                "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-mass-0.1.0.json#/definitions/quantity-uom-mass"
               }
             },
             "required": [
@@ -29,7 +29,7 @@
         "inputEPCList": {
           "type": "array",
           "items": {
-            "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sgtin_0.1.0.json#/definitions/epc-uri-sgtin"
+            "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sgtin-0.1.0.json#/definitions/epc-uri-sgtin"
           },
           "minItems": 1,
           "uniqueItems": true
