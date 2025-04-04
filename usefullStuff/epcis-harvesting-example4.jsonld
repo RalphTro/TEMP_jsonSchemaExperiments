@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/epcis-context-file.jsonld",
+        "https://mh1.eu/temp/GS1WebVocContext-minimal8.jsonld"
+    ],
+    "type": "EPCISDocument",
+    "schemaVersion": "2.0",
+    "creationDate": "2024-11-22T11:30:00+01:00",
+    "epcisBody": {
+        "rdfs:comment": [{
+                "@value": "This example illustrates how GS1 Web Vocabulary data structures can be embedded within an EPCIS event. Note: ideally, master data should be shared/transmitted outside EPCIS events, unless there are compelling reasons to do otherwise.",
+                "@language": "en"
+            }
+        ],
+        "eventList": [{
+            "type": "ObjectEvent",
+            "eventTime": "2024-11-22T11:30:00+01:00",
+            "eventTimeZoneOffset": "+01:00",
+            "action": "ADD",
+            "quantityList": [{
+                    "epcClass": "https://id.gs1.de/01/04012345999969/10/Batch1",
+                    "quantity": 20
+                },
+                {
+                    "epcClass": "https://id.example.com/01/04012345123456/10/LOT1",
+                    "quantity": 25
+                }
+            ],
+            "bizStep": "commissioning",
+            "disposition": "active",
+            "readPoint": {
+                "id": "https://id.gs1.org/414/4262431780029"
+            },
+            "gs1:masterDataAvailableFor": [{
+                    "@id": "https://id.gs1.de/01/04012345999969/10/Batch1",
+                    "harvestDateStart": "2024-11-20",
+                    "harvestDateEnd": "2024-11-22",
+                    "growingMethod": "SUSTAINABLE"
+                },
+                {
+                    "@id": "https://id.example.com/01/04012345123456/10/LOT1",
+                    "gs1:harvestDate": "2024-11-21",
+                    "gs1:growingMethod": "gs1:GrowingMethodCode-FIELD_GROWN"
+                }
+            ]
+        }]
+    }
+}
