@@ -1,7 +1,7 @@
 {
     "@context": [
         "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/epcis-context-file.jsonld",
-        "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/webvoc-context-file-draft.jsonld"
+        "https://mh1.eu/temp/GS1WebVocContext-minimal4.jsonld"
     ],
     "type": "EPCISDocument",
     "schemaVersion": "2.0",
