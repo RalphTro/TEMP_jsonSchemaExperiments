@@ -14,7 +14,8 @@
     "gs1": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/harvesting-context-file-draft.jsonld",
     "harvestDate": {
       "@id": "gs1:harvestDate",
-      "@type": "xsd:date"
+      "@type": "xsd:date",
+      "owl:equivalentProperty": "harvestDate"
     },
     "harvestDateEnd": {
       "@id": "gs1:harvestDateEnd",
