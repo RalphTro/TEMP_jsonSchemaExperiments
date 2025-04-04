@@ -11,7 +11,7 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "http://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "gs1": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/harvesting-context-file",
+    "gs1": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/usefullStuff/harvesting-context-file-draft.json",
     "harvestDate": {
       "@id": "gs1:harvestDate",
       "@type": "xsd:date"
