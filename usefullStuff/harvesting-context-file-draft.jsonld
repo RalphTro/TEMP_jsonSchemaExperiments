@@ -15,7 +15,7 @@
     "harvestDate": {
       "@id": "gs1:harvestDate",
       "@type": "xsd:date",
-      "owl:equivalentProperty": "harvestDate"
+      "owl:equivalentProperty": "gs1:harvestDate"
     },
     "harvestDateEnd": {
       "@id": "gs1:harvestDateEnd",
