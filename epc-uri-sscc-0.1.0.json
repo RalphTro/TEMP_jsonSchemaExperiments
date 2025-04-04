@@ -1,5 +1,5 @@
 {
-    "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sscc_0.1.0.json",
+    "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sscc-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "description": "Pattern to validate that epcList, childEPCs or parentID are populated with SSCC EPC URIs.",
     "title": "SSCC EPC URIs",

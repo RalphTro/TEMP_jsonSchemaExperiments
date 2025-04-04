@@ -21,7 +21,7 @@
         "type": "object",
         "properties": {
           "uom": {
-            "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-all_0.1.0.json#/definitions/quantity-uom-all"
+            "$ref": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-all-0.1.0.json#/definitions/quantity-uom-all"
           }
         }
       }
