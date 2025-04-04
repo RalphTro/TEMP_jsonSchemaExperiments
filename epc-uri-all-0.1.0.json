@@ -2,7 +2,7 @@
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-all-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "EPC URIs",
-    "description": "Set of patterns to validate that epcList, childEPCs, inputEPCList, outputEPCList or parentID are populated with EPC URIs. Contains SGTIN, SSCC, ... (TO BE COMPLETED) EPC URIs.",
+    "description": "Specifies set of values for the epcList, childEPCs or parentID field, expressed as any GS1 Key based EPC scheme in EPC URI (URN) format, relevant for all sectors.",
     "definitions": {
         "epc-uri-all": {
             "oneOf": [{
