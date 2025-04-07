@@ -1,7 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/example-custom-bizsteps-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Specifies set of user-defined placeholder values for the bizStep field using the ‘example.com’ domain, which should be replaced by your own domain and code values, for illustration purposes.",
+    "description": "Specifies set of user-defined placeholder values for the bizStep field, for illustration purposes. Replace ‘example.com’ and custom code values with your own ones.",
     "title": "Example custom bizstep code values",
     "definitions": {
         "example-custom-bizsteps": {
