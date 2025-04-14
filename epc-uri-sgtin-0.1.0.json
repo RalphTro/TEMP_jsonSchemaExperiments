@@ -1,7 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-uri-sgtin-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Pattern to validate that epcList, childEPCs, inputEPCList, outputEPCList or parentID are populated with SGTIN EPC URIs.",
+    "description": "Specifies value for the epcList, childEPCs, inputEPCList, outputEPCList, or parentID field, expressed as a Serialised Global Trade Item Number (SGTIN) in EPC URI (URN) format, relevant for all sectors.",
     "title": "SGTIN EPC URI",
     "definitions": {
         "epc-uri-sgtin": {
