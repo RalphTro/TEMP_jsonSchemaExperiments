@@ -72,8 +72,10 @@ Files MAY be removed.
 
 Apply the following 'recipe' to fill in the `description` property:
 
-* > `Specifies value | set of values for` {indicate EPCIS field name(s)}
-* > `expressed as` {indicate type, format}
-* > [optional] `relevant for` {insert applicable industry domain(s)} | `for illustration`
-* > [optional] `note` {provide additional context}
+* > `Specifies value | set of values for` {indicate EPCIS field name(s)} 
+* > `,` `expressed as` {indicate type, format}
+* > [optional] `,` `relevant for` {insert applicable industry domain(s)} | `for illustration`
+* > [optional] `,` `note` {provide additional context} `.`
+
+Ideally, formulate description in the specified sequence.
   
