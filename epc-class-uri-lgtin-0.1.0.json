@@ -1,7 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/epc-class-uri-lgtin-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Pattern to validate that quantityList, childQuantityList, inputQuantityList, or outputQuantityList are populated with LGTIN EPC Class URIs.",
+    "description": "Specifies value for the epcClass field as part of the quantityList, childQuantityList, inputQuantityList, or outputQuantityList, expressed as an LGTIN EPC Class URI (URN), relevant for all sectors.",
     "title": "LGTIN EPC Class URI",
     "definitions": {
         "epc-class-uri-lgtin": {
