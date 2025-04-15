@@ -1,8 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-volume-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid volume unit code according to UN/CEFACT Rec. 20.",
-    "title": "Unit codes for volume, based on UN/CEFACT Rec. 20",
+    "description": "Specifies set of values for the uom field in a QuantityElement, expressed as a 2- or 3-character volume unit code, relevant for food, pharma, technical industries, healthcare, etc., note: from UN/CEFACT Rec. 20, e.g., 'LTR' for 'litre'.",
     "definitions": {
         "quantity-uom-volume": {
             "type": "string",
