@@ -1,7 +1,7 @@
 {
     "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/quantity-uom-length-0.1.0.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Ensures that the uom field as part of a QuantityElement is populated with a valid length unit code according to UN/CEFACT Rec. 20.",
+    "description": "Specifies set of values for the uom field in a QuantityElement, expressed as a 2- or 3-character length unit code, relevant for technical industries, apparel, etc., note: from UN/CEFACT Rec. 20, e.g., 'MTR' for 'metre'.",
     "title": "Unit codes for length, based on UN/CEFACT Rec. 20",
     "definitions": {
         "quantity-uom-length": {
