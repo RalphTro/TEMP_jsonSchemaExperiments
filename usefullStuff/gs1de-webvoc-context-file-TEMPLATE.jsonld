@@ -1,0 +1,91 @@
+{
+    "@context": {
+      "@protected": true,
+      "@version": 1.1,
+      "id": "@id",
+      "type": "@type",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "dcterms": "http://purl.org/dc/elements/1.1/",
+      "gs1": "https://ref.gs1.org/voc/",
+      "gs1de": "https://voc.gs1.de/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "schema": "http://schema.org/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "AdditionalProductClassificationDetails": "gs1:AdditionalProductClassificationDetails",
+      "AdditiveDetails": "gs1:AdditiveDetails",
+
+
+
+
+      "additionalOrganizationID": {
+        "@id": "gs1:additionalOrganizationID"
+      },
+      "additionalOrganizationIdentificationTypeValue": {
+        "@id": "gs1:additionalOrganizationIdentificationTypeValue",
+        "@type": "xsd:string"
+      },
+      "additionalProductClassificationCodeDescription": {
+        "@id": "gs1:additionalProductClassificationCodeDescription",
+        "@container": "@language"
+      },
+
+      "additiveLevelOfContainment": {
+        "@id": "gs1:additiveLevelOfContainment",
+        "@type": "@vocab",
+        "@context": {
+          "CONTAINS": "gs1:LevelOfContainmentCode-CONTAINS",
+          "FREE_FROM": "gs1:LevelOfContainmentCode-FREE_FROM",
+          "MAY_CONTAIN": "gs1:LevelOfContainmentCode-MAY_CONTAIN",
+          "@protected": true
+        }
+      },
+
+      "bestBeforeDate": {
+        "@id": "gs1:bestBeforeDate",
+        "@type": "xsd:date"
+      },
+      
+      "bonelessClaim": {
+        "@id": "gs1:bonelessClaim",
+        "@type": "@vocab",
+        "@context": {
+          "FALSE": "gs1:NonbinaryLogicCode-FALSE",
+          "NOT_APPLICABLE": "gs1:NonbinaryLogicCode-NOT_APPLICABLE",
+          "TRUE": "gs1:NonbinaryLogicCode-TRUE",
+          "UNSPECIFIED": "gs1:NonbinaryLogicCode-UNSPECIFIED",
+          "@protected": true
+        }
+      },
+      "brand": {
+        "@id": "gs1:brand"
+      },
+      "brandHomepageClinical": {
+        "@id": "gs1:brandHomepageClinical",
+        "@type": "@id"
+      },
+     
+      "consumerFirstAvailabilityDateTime": {
+        "@id": "gs1:consumerFirstAvailabilityDateTime",
+        "@type": "xsd:dateTime"
+      },
+      
+      "convenienceLevelPercent": {
+        "@id": "gs1:convenienceLevelPercent",
+        "@type": "xsd:float"
+      },
+      
+      "discountRepeatsPerMultipleMinimum": {
+        "@id": "gs1:discountRepeatsPerMultipleMinimum",
+        "@type": "xsd:boolean"
+      },
+     
+      "filePixelHeight": {
+        "@id": "gs1:filePixelHeight",
+        "@type": "xsd:integer"
+      },
+     
+    }
+  }
