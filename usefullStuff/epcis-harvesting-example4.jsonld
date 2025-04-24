@@ -32,13 +32,13 @@
                 "id": "https://id.gs1.org/414/4262431780029"
             },
             "gs1:masterDataAvailableFor": [{
-                    "@id": "https://id.gs1.de/01/04012345999969/10/Batch1",
+                    "id": "https://id.gs1.de/01/04012345999969/10/Batch1",
                     "harvestDateStart": "2024-11-20",
                     "harvestDateEnd": "2024-11-22",
                     "growingMethod": "SUSTAINABLE"
                 },
                 {
-                    "@id": "https://id.example.com/01/04012345123456/10/LOT1",
+                    "id": "https://id.example.com/01/04012345123456/10/LOT1",
                     "gs1:harvestDate": "2024-11-21",
                     "gs1:growingMethod": "gs1:GrowingMethodCode-FIELD_GROWN"
                 }
