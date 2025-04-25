@@ -42,6 +42,6 @@
         "EUDR_SUPPLIER": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
         "@protected": true
       }
-    },
+    }
   }
 }
