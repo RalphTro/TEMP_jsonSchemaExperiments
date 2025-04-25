@@ -15,12 +15,33 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "ReferenceNumber": "gs1de:ReferenceNumber",
-    "plotOfOrigin": {
-      "@id": "gs1de:plotOfOrigin"
-    },
-    "gs1de:productionDateStart": {
+    "productionDateStart": {
       "@id": "gs1de:productionDateStart",
       "@type": "xsd:date"
-    }
+    },
+    "productionDateEnd": {
+      "@id": "gs1de:productionDateEnd",
+      "@type": "xsd:date"
+    },
+    "referenceNumber": {
+      "@id": "gs1de:referenceNumber"
+    },
+    "referenceNumberValue": {
+      "@id": "gs1de:referenceNumberValue",
+      "@type": "xsd:string"
+    },
+    "referenceNumberVerificationID": {
+      "@id": "gs1de:referenceNumberVerificationID",
+      "@type": "xsd:string"
+    },
+    "referenceNumberTypeCode": {
+      "@id": "gs1de:referenceNumberTypeCode",
+      "@type": "@vocab",
+      "@context": {
+        "EUDR_SENDER": "gs1de:ReferenceNumberTypeCode-EUDR_SENDER",
+        "EUDR_SUPPLIER": "gs1de:ReferenceNumberTypeCode-EUDR_SUPPLIER",
+        "@protected": true
+      }
+    },
   }
 }
