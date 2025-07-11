@@ -1,0 +1,257 @@
+{
+    "$id": "https://ralphtro.github.io/TEMP_jsonSchemaExperiments/fruit-product-master-data.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "DRAFT Fruit Product Master Data",
+    "type": "object",
+    "properties": {
+        "gs1de:isTradeItemABaseUnit": {
+            "type": "boolean"
+        },
+        "gs1de:isTradeItemAConsumerUnit": {
+            "type": "boolean"
+        },
+        "gs1de:isTradeItemADespatchUnit": {
+            "type": "boolean"
+        },
+        "gs1de:isTradeItemAnOrderableUnit": {
+            "type": "boolean"
+        },
+        "gs1de:tradeItemUnitDescriptorCode": {
+            "type": "string"
+        },
+        "gs1de:effectiveDateTime": {
+            "type": "string",
+            "format": "date"
+        },
+        "gs1de:isTradeItemAVariableUnit": {
+            "type": "boolean"
+        },
+        "gs1de:dataProvider": {
+            "type": "object",
+            "properties": {
+                "partyGLN": {
+                    "type": "string"
+                },
+                "organizationName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "partyGLN",
+                "organizationName"
+            ]
+        },
+        "gtin": {
+            "type": "string"
+        },
+        "targetMarket": {
+            "type": "object",
+            "properties": {
+                "targetMarketCountries": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "targetMarketCountries"
+            ]
+        },
+        "gpcCategoryCode": {
+            "type": "string"
+        },
+        "availabilityStarts": {
+            "type": "string",
+            "format": "date"
+        },
+        "packagingType": {
+            "type": "string"
+        },
+        "functionalName": {
+            "type": "object",
+            "properties": {
+                "en": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "en"
+            ]
+        },
+        "productDescription": {
+            "type": "object",
+            "properties": {
+                "en": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "en"
+            ]
+        },
+        "brandName": {
+            "type": "object",
+            "properties": {
+                "en": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "en"
+            ]
+        },
+        "grossWeight": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        },
+        "inPackageDepth": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        },
+        "outOfPackageDepth": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        },
+        "inPackageHeight": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        },
+        "outOfPackageHeight": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        },
+        "inPackageWidth": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        },
+        "outOfPackageWidth": {
+            "type": "object",
+            "properties": {
+                "value": {
+                    "type": "string"
+                },
+                "unitCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "value",
+                "unitCode"
+            ]
+        }
+    },
+    "required": [
+        "gs1de:isTradeItemABaseUnit",
+        "gs1de:isTradeItemAConsumerUnit",
+        "gs1de:isTradeItemADespatchUnit",
+        "gs1de:isTradeItemAnOrderableUnit",
+        "gs1de:tradeItemUnitDescriptorCode",
+        "gs1de:effectiveDateTime",
+        "gs1de:isTradeItemAVariableUnit",
+        "gs1de:dataProvider",
+        "gtin",
+        "targetMarket",
+        "gpcCategoryCode",
+        "availabilityStarts",
+        "packagingType",
+        "functionalName",
+        "productDescription",
+        "brandName",
+        "grossWeight"
+    ],
+    "allOf": [{
+            "anyOf": [{
+                    "required": ["inPackageDepth"]
+                },
+                {
+                    "required": ["outOfPackageDepth"]
+                }
+            ]
+        },
+        {
+            "anyOf": [{
+                    "required": ["inPackageHeight"]
+                },
+                {
+                    "required": ["outOfPackageHeight"]
+                }
+            ]
+        },
+        {
+            "anyOf": [{
+                    "required": ["inPackageWidth"]
+                },
+                {
+                    "required": ["outOfPackageWidth"]
+                }
+            ]
+        }
+    ]
+}
