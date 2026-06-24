@@ -1,0 +1,63 @@
+{
+    "@context": [
+        "https://schema.org",
+        "https://mh1.eu/temp/GS1WebVocContext-minimal8.jsonld"
+    ],
+    "id": "https://example.com/01/09520123456788/faqs",
+    "type": "FAQPage",
+    "name": "Frequently Asked Questions - Acme Smart Kettle 3000",
+    "inLanguage": "en",
+    "about": {
+        "id": "https://id.gs1.org/01/09520123456788",
+        "type": "Product",
+        "gtin": "09520123456788",
+        "name": "Acme Smart Kettle 3000",
+        "brand": {
+            "type": "Brand",
+            "name": "Acme"
+        }
+    },
+    "publisher": {
+        "type": "Organization",
+        "name": "Acme Corporation",
+        "url": "https://example.com"
+    },
+    "mainEntity": [
+        {
+            "type": "Question",
+            "id": "https://example.com/01/09520123456788/faqs#q1",
+            "name": "How do I connect the kettle to Wi-Fi?",
+            "acceptedAnswer": {
+                "type": "Answer",
+                "text": "Download the Acme Home app, switch on the kettle, and follow the in-app instructions to connect to your home Wi-Fi network."
+            }
+        },
+        {
+            "type": "Question",
+            "id": "https://example.com/01/09520123456788/faqs#q2",
+            "name": "Is the kettle compatible with voice assistants?",
+            "acceptedAnswer": {
+                "type": "Answer",
+                "text": "Yes, the Acme Smart Kettle 3000 supports major voice assistants such as Alexa and Google Assistant."
+            }
+        },
+        {
+            "type": "Question",
+            "id": "https://example.com/01/09520123456788/faqs#q3",
+            "name": "Can I set temperature presets?",
+            "acceptedAnswer": {
+                "type": "Answer",
+                "text": "Yes, the kettle allows you to define and save multiple temperature presets via the mobile app."
+            }
+        },
+        {
+            "type": "Question",
+            "id": "https://example.com/01/09520123456788/faqs#q4",
+            "name": "What is the warranty period?",
+            "acceptedAnswer": {
+                "type": "Answer",
+                "text": "The product comes with a 2-year limited warranty covering manufacturing defects."
+            }
+        }
+    ]
+}
